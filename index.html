@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <section>
+        <div class="section-1-fondo"></div>
+        <div class="container-fluid">
+            <div class="row align-items-lg-center">
+                <div class="row flex-lg-row-reverse">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 py-lg-5">
+                        <div class="circle-b text-center p-sm-5">
+                            <img src="./images/fucion.png" alt="" class="mt-3">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-md-center text-lg-start mt-lg-5 p-lg-5 mitad">
+                        <h1 class="sequel-sans text-white mt-5 mt-lg-5">Urbk, la plataforma de inversión inteligente.</h1>
+                        <span class="text-white-50 ">Urbk es un fondo de inversión socialmente responsable que proporciona el 1% de ren-ilidad mensual.</span>
+                        <div class="d-flex align-items-end mt-5 mt-md-5">
+                            <button class="btn-ubk-blue sequel-sans bg-blue text-white">Invertir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 pt-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="c-title">
+                            <h3 class="monorama">Urbk es tu ingreso pasivo mensual</h3>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end c-body">
+                        <div class="mt-5">
+                            <span>Los inversores de Urbk tienen la oportunidad de generar el 1% de retorno de su inversión al mes. Urbk ha sido diseñada para financiar proyectos rentables que le darán rendimientos constantes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 fondo-circle mb-lg-5">
+                    <div class="d-flex mt-5">
+                        <button class="btn-simulador monorama bg-white w-50">Simulador</button>
+                    </div>                    
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 mt-5 ">
+                    <div class="container-fluid">
+                        <div class="row tab-heder border-all">
+                            <div class="col-12 text-center py-2 py-lg-3">
+                                <span>Plazos</span>
+                            </div>
+                            <div class="col py-3"><span>Inversiones</span></div>
+                            <div class="col item border-top-start py-3"><span>12 meses</span></div>
+                            <div class="col item py-3"><span>24 meses</span></div>
+                            <div class="col item border-bottom-end py-3"><span>36 meses</span></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3 tab-body-start">
+                                <div class="col py-2 text-wrap list">$300,000 - $599,999</div>
+                                <div class="col py-2 text-wrap list">$600,000 - $899,999</div>
+                                <div class="col py-2 text-wrap list">$900,000 - $1’999,999</div>
+                                <div class="col py-2 text-wrap list">$2’000,000- $2’999,999</div>
+                                <div class="col py-2 text-wrap list">$3’000,000 en adelante</div>
+                            </div>
+                            <div class="col-8 tab-body border-all">
+                                <div class="row">
+                                    <div class="col-4 list" id="1">7.5%</div>
+                                    <div class="col-4 list" id="2">8.0%</div>
+                                    <div class="col-4 list" id="3">9.0%</div>
+
+                                    <div class="col-4 list" id=4">8.0%</div>
+                                    <div class="col-4 list" id="5">9.0%</div>
+                                    <div class="col-4 list" id="6">10%</div>
+
+                                    <div class="col-4 list" id="7">9.0%</div>
+                                    <div class="col-4 list" id="8">10%</div>
+                                    <div class="col-4 list" id="9">11%</div>   
+                                    
+                                    <div class="col-4 list" id="10">10%</div>
+                                    <div class="col-4 list" id="11">11%</div>
+                                    <div class="col-4 list" id="12">12%</div>   
+
+                                    <div class="col-4 list" id="13">12%</div>
+                                    <div class="col-4 list" id="14">13%</div>
+                                    <div class="col-4 list" id="15">14%</div>   
+                                </div>                                                           
+                            </div>                          
+                        </div>
+                        <div class="row tab-footer mt-3">
+                            <div class="col-4"><input type="text" name="currency-field" id="monto" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" class="form-control text-wrap" placeholder="Ingresa un monto$"></div>
+                            <div class="col-3">
+                                <select class="form-control text-wrap" placeholder="Plazo" id="plazo" name="plazo">
+                                    <option value="12">12</option>
+                                    <option value="24">24</option>
+                                    <option value="36">36</option>
+                                </select>
+                            </div>
+                            <div class="col-5"><input type="text" class="form-control bg-white text-wrap" placeholder="Rendimineto" name="total" id="total" disabled></div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="col-12 col-sm-12 pt-5 cards">
+                    <div class="d-flex justify-content-center">
+                        <div class="c-title-2">
+                            <h3 class="monorama">Grandes rendimientos en 6 meses</h3>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end c-body-2">
+                        <div class="mt-5">
+                            <span>Con uno de los tipos más competitivos del mercado y una excelente rentabilidad mensual, Urbk es lo que necesitas para hacer un plan de futuro sin complicaciones.</span>
+                        </div>
+                    </div>
+                </div>   
+                <div class="col-12 col-sm-12 pt-5 cards">
+                    <div class="d-flex justify-content-center">
+                        <div class="c-title-2">
+                            <h3 class="monorama">Gana hasta 7 veces la rentabilidad en sólo 6 meses</h3>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end c-body-2">
+                        <div class="mt-5">
+                            <span>Urbk invierte desde $100,000 MXN. y recibe hasta un 7% de rendimiento en sólo 6 meses.</span>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-12 col-sm-12 pt-5 mb-5 cards">
+                    <div class="d-flex justify-content-center">
+                        <div class="c-title-2">
+                            <h3 class="monorama">Comienza tu inversión inteligente</h3>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end c-body-2">
+                        <div class="mt-5">
+                            <span>Comienza tu prueba con Urbk e invierte en los mejores proyectos rentables. Vigilamos nuestra cartera para que puedas tener siempre una rentabilidad mensual del 1%.</span>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="col-lg-4 mt-lg-5">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="monorama">Grandes rendimientos en 6 meses</h3>
+                            <br>
+                            <span>Con uno de los tipos más competitivos del mercado y una excelente rentabilidad mensual, Urbk es lo que necesitas para hacer un plan de futuro sin complicaciones.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="monorama">Gana hasta 7 veces la rentabilidad en sólo 6 meses</h3>
+                            <br>
+                            <span>Urbk invierte desde $100,000 MXN. y recibe hasta un 7% de rendimiento en sólo 6 meses.</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-lg-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="monorama">Comienza tu inversión inteligente</h3>
+                            <br>
+                            <span>Comienza tu prueba con Urbk e invierte en los mejores proyectos rentables. Vigilamos nuestra cartera para que puedas tener siempre una rentabilidad mensual del 1%.</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section pt-5">
+                    <div class="col-12 col-sm-12 text-center tit mx-auto px-lg-5">
+                        <h1 class="sequel-sans text-w">Invierte en Urbk y reserva tu tiempo para las cosas que te gustan.</h1>
+                    </div>
+                    <div class="col-lg-12 text-center py-5">
+                        <button class="btn-ubk sequel-sans">Invertir ahora</button>
+                    </div>
+                        
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <a href="#" class="mb-3 me-5 mb-md-0 text-muted text-decoration-none lh-1">
+                                <img src="./images/U_llena.svg" alt="" class="me-3">
+                                <span class="mb-3 mb-md-0 text-w">Urbk.us</span>
+                            </a>
+                        </div>
+                    
+                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                            <li class="ms-3"><a class="text-muted" href="#"><img src="./images/facebook.svg" alt=""></a></li>
+                            <li class="ms-3"><a class="text-muted" href="#"><img src="./images/instagram.svg" alt=""></a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

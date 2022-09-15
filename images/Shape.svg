@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1704.034" height="1707.675" viewBox="0 0 1704.034 1707.675">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.11" y1="0.023" x2="1.11" y2="0.977" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3b517d"/>
+      <stop offset="1" stop-color="#0f1011"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.123" y1="-0.11" x2="0.877" y2="1.11" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Shape" transform="translate(1704.034 1085.776) rotate(150)">
+    <path id="Shape_9" data-name="Shape 9" d="M1243.8,1092.42a1091.519,1091.519,0,0,0-56.386-347.479C1087.779,447.445,863.711,207.1,577.1,85.8A1086.756,1086.756,0,0,0,152.437,0q-10.523,0-21.045.208A1096.9,1096.9,0,0,0,0,10.578V1253.746H1231.958A1098.281,1098.281,0,0,0,1243.8,1092.42Z" transform="translate(0 0)" fill="#0f1011"/>
+    <path id="Shape_12" data-name="Shape 12" d="M1142.872,982.66a387.66,387.66,0,0,0-38.491-44.821L841.305,674.629,347.045,180.116l-66.827-66.861a385.536,385.536,0,0,0-104.43-74.5A386.473,386.473,0,0,0,0,.061v926.61L55.96,982.66Z" transform="translate(0.001 271.086)" fill="#0f1011" opacity="0.341"/>
+    <path id="Shape_10" data-name="Shape 10" d="M1126.9,1092.42a1091.359,1091.359,0,0,0-56.4-347.479C970.854,447.445,746.75,207.1,460.093,85.8A1087.084,1087.084,0,0,0,35.36,0Q24.835,0,14.312.208C-14.552,103.462.25,216.345,58.659,309.7a386.593,386.593,0,0,0,54.531,68.5l115.486,115.58,452.738,453.1L937.224,1202.9a386.3,386.3,0,0,0,62.613,50.842h115.22A1098.128,1098.128,0,0,0,1126.9,1092.42Z" transform="translate(116.899 0)" opacity="0.341" fill="url(#linear-gradient)"/>
+    <path id="Shape_11" data-name="Shape 11" d="M857.154,460.683,509.834,113.219C370.617-26.056,151.563-36.836,0,80.881v379.8Z" transform="translate(0 793.063)" opacity="0.141" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>
