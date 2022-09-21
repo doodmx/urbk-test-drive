@@ -5,22 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbk</title>
+    <link rel="icon" type="image/x-icon" href="./images/U_llena.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/contacto.css">
 </head>
 <body>
-    <section>
+    <section class="vh-100">
         <div class="container-fluid">
-            <div class="row align-items-lg-center">
-                <div class="col-lg-6">
-
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 align-self-start">
+                <a href="index.html" class="atras ms-3 mt-4"><h3>Atrás</h3></a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 align-self-center">
+                <div id="circle"></div>
+                <div class="card-transparent">
+                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-center mb-5 mg-lg-2 py-lg-0 py-xxl-0 py-5">
+                        <img src="./images/U_transparente.svg" alt="">
+                    </div>
+                    <form class="form-contact px-lg-5 px-3" action="https://formsubmit.co/asesor.comercial@urbk.mx" method="POST">                      
+                        <div class="form-outline mb-5 mb-lg-4 mb-xxpy-xxl-0 mt-5 mt-lg-2">
+                            <input type="text" name="name" required class="form-control form-control-lg py-3"
+                                placeholder="Nombre" />
+                        </div>
+                        <div class="form-outline mb-5 mb-lg-4 mb-xxpy-xxl-0">
+                            <input type="text" name="apellidos" required class="form-control form-control-lg py-3"
+                            placeholder="Apellidos" />
+                        </div>
+            
+                        <div class="form-outline mb-5 mb-lg-4 mb-xxpy-xxl-0">
+                            <input type="email" name="email" required class="form-control form-control-lg py-3"
+                            placeholder="Correo" />
+                        </div>
+                        <input type="hidden" name="_next" value="https://test-drive.urbk.us/contacto.html?form=true">
+                        <input type="hidden" name="_cc" value="leadsdood@gmail.com">
+                        <div class="text-center text-lg-center mt-5 mt-lg-3 mt-xxpy-xxl-0 py-5 py-lg-3">
+                            <button type="submit" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#tnksModal"
+                                style="padding-left: 6.5rem; padding-right: 6.5rem;">Enviar</button>
+                        </div>
+            
+                    </form>
                 </div>
-                <div class="col-lg-6">
-                    
+               
+            </div>
+          </div>
+        </div>
+        <div class="footer-section fixed-bottom bg-footer py-3">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center px-3">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="#" class="mb-3 me-5 mb-md-0 text-muted text-decoration-none lh-1">
+                        <img src="./images/U_llena.svg" alt="" class="me-3">
+                        <span class="mb-3 mb-md-0" style="color: #FFFFFF;">Urbk.us</span>
+                    </a>
                 </div>
+            
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/UrbkFinancialGroup" target="_blank"><img src="./images/facebook.svg" alt=""></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/urbk.financialgroup/" target="_blank"><img src="./images/instagram.svg" alt=""></a></li>
+                </ul>
+            </footer>
+        </div>
+        <div class="modal fade" id="tnksModal" tabindex="-1" aria-labelledby="tnksModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-5">
+                  <h1 class="title">¡Gracias!</h1>
+                  <br>
+                  <span class="text">
+                    Bienvenido a la comunidad financiera de Urbk.
+                  </span>
+                </div>
+              </div>
             </div>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const form = params.get('form');
+        const tnksModal = document.getElementById('tnksModal')
+        if (form) {
+            tnksModal.style.display = 'block';
+            tnksModal.style.paddingRight = "17px";
+            tnksModal.className = "modal fade show";
+            setTimeout(() => {
+                tnksModal.style.display = "none";
+                tnksModal.className = "modal fade";
+            }, 6000)
+
+        } else console.log('sin param');
+
+      $(window).resize(function() {
+          $('.circle').css('height', $('.circle').width());
+      });
+      $(document).ready(function(){
+          $("#circle").height($("#circle").width());
+      });
+    </script>
 </body>
 </html>

@@ -1,0 +1,159 @@
+body{
+    background-image: url('../images/city-2021-08-29-21-25-07-utc.png');
+    background-repeat: no-repeat;
+    backface-visibility: transparent;
+    background-position: 0% 0%;
+    background-size: 50% 100vh;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0F1011;
+    opacity: 1;
+}
+
+#circle{
+    width: 50%;
+    border-radius: 100%;
+    transform: matrix(0, 1, -1, 0, 0, 0);
+    background: transparent linear-gradient(180deg, #3B517D 0%, #121415 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+    z-index: -100;
+    top: auto;
+    right: auto;
+    bottom: auto;
+}
+.card-transparent{
+    background: #a2b0c32c 0% 0% no-repeat padding-box;
+    border-radius: 38px;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    padding: 2rem;
+    width: 80%;
+    height: 85vh;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-footer{
+    --bs-nav-link-hover-color: rgb(19 19 19);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #FFFFFF !important;
+}
+
+.form-contact input {
+    background: #0000005d 0% 0% no-repeat padding-box;
+    border: 2px solid #DBDDDD !important;
+    border-radius: 30px ;
+    opacity: 1;
+    backdrop-filter: blur(23px);
+    -webkit-backdrop-filter: blur(23px);
+    
+}
+
+.form-contact button{
+    border-radius: 32px;
+    background: #3b517d85 0% 0% no-repeat padding-box !important;
+    border-radius: 40px;
+    border-color: #3b517d85;
+    opacity: 1;
+    backdrop-filter: blur(38px);
+}
+.atras{
+    text-decoration: none;
+    color: #DBDDDD;
+    position: absolute;
+}
+.atras:hover{
+    text-decoration: none;
+    color: #DBDDDD;
+}
+.modal{
+    background: #3b517d7e 0% 0% no-repeat padding-box;
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+}
+.modal-content{
+    background: #A2B0C3 0% 0% no-repeat padding-box;
+    border: 2px solid #3B517D;
+    opacity: 1;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 32px;
+}
+.modal-header{
+    border-bottom: 0;
+}
+.modal-body .title{
+    font: normal normal 300 40px/47px 'Sequel Sans';
+    letter-spacing: 0px;
+    color: #3B517D;
+}
+.modal-body .text{
+    font: normal normal 300 25px/29px 'Sequel Sans';
+}
+@media (min-width: 300px) and (max-width: 991px) {
+    body{
+        background-size: 100% 100vh;
+    }
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #circle{
+        display: none;
+    }
+    .card-transparent{
+        background-color: transparent;
+        width: 100%;
+        height: 100vh;
+        margin-top: 0%;
+        padding: 0;
+    }
+}
+
+
+
+/* @media (min-width: 992px) {
+    body{
+        background-size: 50% 100vh;
+    }
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #circle{
+        display: block;
+    }
+    .card-transparent{
+        background-color: transparent;
+        width: 100%;
+        height: 100vh;
+        margin-top: 0%;
+        padding: 0;
+    }
+    
+} */
+/*
+@media (min-width: 1600px) {
+    #circle{
+        display: block;
+        top: 25%;
+        right: 0%;
+    }
+    .card-transparent{
+        width: 80%;
+        margin-top: 10%;
+    }
+}
+@media (min-width: 2100px) {
+    #circle{
+        display: block;
+        top: 10%;
+        right: 1%;
+    }
+    .card-transparent{
+        width: 90%;
+    }
+  } */

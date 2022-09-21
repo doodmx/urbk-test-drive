@@ -1,6 +1,55 @@
 body{
   background: #000000ad radial-gradient(closest-side at 50% 50%, #ede6de00 0%, #030303fb 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
+  overflow-x: hidden;
+}
+.float{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #ffffff55;
+  border: 2px solid #ffffff;
+  opacity: 1;
+  position:fixed;
+  bottom:70px;
+  right:40px;
+  text-align:center;
+  z-index:100;
+}
+.float:hover{
+  background: #00000000 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 0px #00000000;
+  border-color: #00000000;
+}
+.float:hover img{
+  filter: invert(100%) brightness(40%) sepia(100%) hue-rotate(100deg) saturate(1000%) contrast(0.8) !important;
+  width: 120%;
+}
+
+.float img{
+  margin-left: 50%;
+  width: 100%;
+}
+.img-fondo{
+  position: relative;
+  overflow: hidden;
+}
+.img-fondo:before
+{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -40%;
+  left: -10%;
+  z-index: -200;
+  background: transparent url('../images/Shape.png') 0% 0% no-repeat padding-box; 
+}
+
+.img-fondo:before
+{
+  transform: rotate(30deg);
 }
 .fondo-cir{
   background: transparent url('../images/Shape_1.png') 50% 90% no-repeat padding-box;
@@ -31,6 +80,14 @@ body{
   background-color: #3B517D !important;
   box-shadow: 0px 0px 20px 0px #3B517Dbf;
 }
+.btn-ubk-blue a{
+ color: #FFFFFF;
+ text-decoration: none;
+}
+.btn-ubk-blue a:hover{
+  color: #FFFFFF;
+  text-decoration: none;
+ }
 .content-titles{
   margin-left: auto;
   margin-right: auto;
@@ -139,11 +196,13 @@ body{
   padding: 1rem 0.75rem !important;
   border-radius: 35px;
   background-color: #DBDDDD;
+  text-align: center;
 }
 .tab-footer select{
   padding: 1rem 0.75rem !important;
   border-radius: 35px;
   background-color: #DBDDDD;
+  text-align: center;
 }
 .footer-section{
   background: #3B517D 0% 0% no-repeat padding-box;
@@ -175,6 +234,15 @@ body{
   font-size: xx-large;
   border: #FFFFFF;
   box-shadow: 0px 0px 20px 0px #ffffffbf;
+  text-decoration: none !important;
+}
+.btn-ubk a{
+  color: #000000;
+  text-decoration: none;
+}
+.btn-ubk a:hover{
+  color: #000000;
+  text-decoration: none;
 }
 .btn-white{
   color: #FFFFFF 0% 0% no-repeat padding-box;
@@ -264,12 +332,6 @@ body{
   .tab-body .list{
     padding-top: 1rem;
     padding-bottom: 0.5rem;
-  }
-  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    white-space:pre-line;  
-    position:relative;
-    top:-7px;
-    
   }
   .btn-ubk{
     width:  150px;
