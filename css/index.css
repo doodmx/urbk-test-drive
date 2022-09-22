@@ -217,9 +217,14 @@ body{
 .sequel-sans{
   font-family: 'Sequel Sans';
 }
+.sequel-sans-book{
+  font-family: 'Sequel Sans Book';
+}
 .btn-simulador{
   width: 100%;
   height: 90px;
+  margin-top: -45%; 
+  margin-left: 10%;
   border-radius: 33px;
   opacity: 1; 
   font-size: x-large;
@@ -254,6 +259,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 95%;
+  height: 350px;
   padding-top: 2rem;
   padding-bottom: 3rem;
   padding-left: 1rem;
@@ -262,6 +268,9 @@ body{
 }
 
 @media (min-width: 300px) {
+  .img-top{
+    display: none;
+  }
   .circle-b{
     width: 270px;
     height: 270px;
@@ -309,6 +318,7 @@ body{
     width: 90% !important;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
     font-size: medium;
     background: transparent url('../images/Foto_simulador.png') 50% 50% no-repeat padding-box;
     color: #FFFFFF;
@@ -323,15 +333,20 @@ body{
     font-size: small;
   }
   .tab-body-start{
-    font-size: x-small;
+    font-size: 12px;
+    text-align: start !important;
+  }
+  .tab-body-start .list{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .tab-body{
     font-size: small;
     text-align: center;
   }
   .tab-body .list{
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
   }
   .btn-ubk{
     width:  150px;
@@ -339,6 +354,9 @@ body{
     border-radius: 33px;
     opacity: 1; 
     font-size: small;
+  }
+  .image-circle{
+    display: none;
   }
 }
 @media (min-width: 576px) {
@@ -384,6 +402,9 @@ body{
   }
 }
 @media (min-width: 716px) {
+  .tab-body-start{
+    font-size: 17px;
+  }
   .tab-body{
     font-size: large;
     text-align: center;
@@ -394,8 +415,11 @@ body{
   }
 }
 @media (min-width: 796px) {
+  .tab-body-start{
+    font-size: 17px;
+  }
   .tab-body-start .list{
-    padding-top: 2rem !important;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
   .tab-body{
@@ -404,7 +428,7 @@ body{
   }
   .tab-body .list{
     padding-top: 1.7em;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.9rem;
   }
 }
 @media (min-width: 992px) {
@@ -433,8 +457,9 @@ body{
     letter-spacing: 0pX;
   }
   .btn-simulador{
-    width: 70% !important;
-    margin-left: auto;
+    width: 40% !important;
+    margin-top: -45%; 
+    margin-left: 10%;
     margin-right: auto;
     font-size: large;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -448,15 +473,16 @@ body{
     text-align: center;
   }
   .tab-body {
-    margin-left: 1rem;
+    margin-left: 0.0%;
     font-size: large;
   }
   .tab-body-start{
-    font-size: small;
+    font-size: large;
+    text-align: center !important;
   }
   .tab-body .list{
-    padding-top: 1.6rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 0.9rem;
   }
   .fondo-circle{
     background-image: url('../images//foto_circulo.png');
@@ -467,6 +493,12 @@ body{
     padding-top: 15rem;
     padding-bottom: 15rem;
     margin-top: 5rem;
+  }
+  .image-circle{
+    display: block;
+  }
+  .image-circle{
+    display: block;
   }
   .c-title-2{
     display: none;
@@ -534,7 +566,21 @@ body{
     padding-bottom: 15rem;
     margin-top: 5rem;
   }
+  .tab-body-start{
+    font-size: 15px;
+  }
+  .tab-body-start .list{
+    padding-top: 1.8rem;
+    padding-bottom: 1.3rem;
+  }
+  .tab-body .list{
+    padding-top: 1.8rem;
+    padding-bottom: 1.3rem;
+  }
 }
+/* @media (min-width: 1363px){
+
+} */
 @media (min-width: 2100px) {
   .fondo-circle{
     background-image: url('../images//foto_circulo.png');

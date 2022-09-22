@@ -3,6 +3,10 @@
     src: url('../fonts/Sequel_Sans_Light_Head.ttf');
 }
 @font-face {
+    font-family: 'Sequel Sans Book';
+    src: url('../fonts/Sequel_Sans_Book_Head.ttf');
+}
+@font-face {
     font-family: 'Monorama';
     src: url('../fonts/Monorama_Medium.otf');
 }
